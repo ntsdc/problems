@@ -3,14 +3,14 @@ public class colorFilling {
 
     public static void main(String[] args) {
         int[][] image = {{0,0,0}, {0,0,0}};
-        Solution solution = new Solution();
+        Solution733 solution = new Solution733();
         solution.floodFill(image, 0, 0, 2);
         System.out.println("");
     }
 }
 
 
-class Solution {
+class Solution733 {
     public int[][] floodFill(int[][] image, int sr, int sc, int color) {
         int pre_color = image[sr][sc];
         image[sr][sc] = color;
