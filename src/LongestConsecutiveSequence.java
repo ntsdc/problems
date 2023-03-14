@@ -20,10 +20,10 @@ class Solution128 {
         int max = 1;
         Set<Integer> hashSet = new HashSet<>();
         for (int num : nums) {
-            hashSet.add(num);
+            hashSet.add(num);       //集合去重
         }
         for (int num : nums) {
-            if (hashSet.contains(num - 1)) {
+            if (hashSet.contains(num - 1)) {    //包含x-1跳过，保证从最长序列起点开始遍历
                 continue;
             }
             int cur = num + 1;
